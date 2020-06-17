@@ -69,9 +69,9 @@ client.on('voiceStateUpdate', async (___, newState) => {
 });
 
 const GUILDID = '716644088748703856'; //  تعديل مهم ايدي السيرفر  
-const CHANNELID = '716628968887025724'; // تعديل مهم ايدي الروم الصوتي
+const CHANNELID = '721058897305010196'; // تعديل مهم ايدي الروم الصوتي
 
-/*client.on('ready',async () => {
+client.on('ready',async () => {
   setInterval(() => {
 client.channels.cache.find(ch => ch.id === CHANNELID && ch.type === 'voice').join();
 },1000); 
@@ -91,7 +91,7 @@ client.channels.cache.find(ch => ch.id === CHANNELID && ch.type === 'voice').joi
       console.log(`Channel Type ::  ${channel.type}, It must be Voice.`);
     }
   }
-});*/
+});
 
 
 client.login(token);
